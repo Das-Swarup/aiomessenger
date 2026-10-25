@@ -1,0 +1,47 @@
+{
+  "name": "aiomessenger",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write \"app/**/*.{ts,tsx}\" \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\" \"*.{json,js,mjs,ts}\" \"docs/**/*.md\" Readme.md",
+    "format:check": "prettier --check \"app/**/*.{ts,tsx}\" \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\" \"*.{json,js,mjs,ts}\" \"docs/**/*.md\" Readme.md",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --runInBand",
+    "check": "npm run lint && npm run format:check && npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "expo": "~58.0.19",
+    "expo-constants": "~58.0.13",
+    "expo-constants": "~58.0.13",
+    "expo-linking": "~58.0.14",
+    "expo-router": "~58.0.26",
+    "expo-secure-store": "~58.0.2",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-web": "~0.21.4",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-url-polyfill": "^3.0.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "~19.3.0",
+    "eslint": "^9.39.1",
+    "eslint-config-expo": "~58.0.4",
+    "jest": "^30.2.0",
+    "jest-expo": "~58.0.12",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3"
+  }
+}
